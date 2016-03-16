@@ -1,9 +1,10 @@
-使用vue+vue-router+vuex构建spa
-
 一个简单的油卡充值应用，支持增删改查
+
+
+使用vue+vue-router+vuex构建
 ------
 
--[线上地址][1]
+-[在线预览地址][1]
 
 * vue
 * vue-router
