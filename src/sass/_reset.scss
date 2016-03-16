@@ -1,0 +1,146 @@
+//
+// Reset
+// --------------------------------------------------
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: 0
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+figure,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    font-size: $baseFontSize;
+    font-family: $baseFontFamily;
+    line-height: $baseLineHeight;
+    color:$defaultColor;
+    background-color:$backgroundColor;
+    // user-select: none
+}
+i,
+em {
+    font-style:normal;
+}
+
+ul,
+ol {
+    list-style: none outside none;
+}
+
+img {
+    border:0;
+    vertical-align:middle;
+}
+
+a{
+    background: transparent;
+    text-decoration:none;
+    color:$defaultColor;
+    &:active{
+        outline: none;
+    }
+
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: $baseFontFamily;
+    font-size: $baseFontSize;
+    border:0;
+    -webkit-appearance:none;
+}
+input{
+    background:none;
+}
+input[type="text"],
+select {
+    -webkit-appearance:none;
+    border-radius:0;
+}
+
+input:hover,input:active{
+    outline:none;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+    border-radius:0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #D1D1D1;
+}

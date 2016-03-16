@@ -1,0 +1,109 @@
+@import "variables";
+@import "animate";
+@import "extends";
+@import "mixins";
+@import "reset";
+//
+// common
+// --------------------------------------------------
+
+html,body{
+    height:100%;
+}
+// button
+.button{
+    @extend %font-button;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:40px;
+    padding:0 15px;
+    color:#fff;
+    background-color: $orange;
+    border:1px solid $orange;
+    border-radius:4px;
+    transition:all ease .3s;
+    &:active{
+        background-color:darken($orange,10%)
+    }
+    &.transparent{
+        color:$orange;
+        background-color: transparent;
+        &:active{
+            border-color:darken($orange,10%);
+            color:darken($orange,10%);
+        }
+    }
+    &.close{
+        color:$importColor;
+        background-color: transparent;
+        border:1px solid $defaultColor;
+        &:active{
+            border-color:darken($defaultColor,10%);
+            color:darken($importColor,10%);
+        }
+    }
+    &.disabled{
+        border-color:$disabledColor;
+        pointer-events:none;
+        background-color: $disabledColor;
+    }
+}
+#app-box{
+    width:100%;
+    height:100%;
+    position:relative;
+    &.use-nav{
+        .router{
+            top:44px;
+        }
+    }
+}
+.router {
+    position:absolute;
+    width:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    transition: all 300ms ease;
+}
+.router-inner{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.wrapper{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing:border-box;
+    top:0;
+    left:0;
+}
+.router-leave {
+    opacity: 0;
+    transform: scale(.95);
+}
+.router-enter {
+    opacity: 0;
+    transform: scale(.95);
+}
+.fade-transition{
+  transition: all 300ms ease;
+}
+.fade-enter{
+    opacity: 0;
+}
+.fade-leave {
+    opacity:0.01;
+}
+.fade-down-enter, .fade-down-leave {
+    opacity: 0;
+    transform: translate3d(0,10px,0);
+}
+
+

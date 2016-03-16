@@ -1,0 +1,13 @@
+{
+  "package":{
+    "id":10000026,
+    "name":"金融超市",
+    "version":"0.0.1.0",
+    "description":"金融超市",
+    "require":[],
+    "app-type":"web",
+    "depends":[],
+    "icon":"icon.png",
+    "entry":"index.html"
+  }
+}

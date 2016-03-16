@@ -1,0 +1,161 @@
+//
+// Extends
+// --------------------------------------------------
+
+// fontStyle
+// --------------------------------------------------
+%font-display2{
+    font-size:20px;
+    font-weight:normal;
+}
+%font-display1{
+    font-size:18px;
+    font-weight:normal;
+}
+%font-headline{
+    font-size:16px;
+    font-weight:bold;
+}
+%font-title{
+    font-size:15px;
+    font-weight:bold;
+}
+%font-body2{
+    font-size:14px;
+    font-weight:bold;
+}
+%font-body1{
+    font-size:14px;
+    font-weight:normal;
+}
+%font-caption{
+    font-size:13px;
+    font-weight:normal;
+}
+%font-footnote{
+    font-size:12px;
+    font-weight:normal;
+}
+%font-input{
+    font-size:15px;
+    font-weight:normal;
+}
+%font-button{
+    font-size:16px;
+    font-weight:bold;
+}
+
+// flex
+// --------------------------------------------------
+
+// clearfix
+// --------------------------------------------------
+%clearfix{
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// center-block
+// --------------------------------------------------
+%center-block{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// text-overflow
+// --------------------------------------------------
+%text-overflow{
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+
+// loading
+// --------------------------------------------------
+%loading{
+    position:relative;
+    width:100%;
+    height:45px;
+    clear:both;
+}
+%loading__box{
+    position:absolute;
+    left:50%;
+    top:50%;
+    padding:10px;
+    border-radius:5px;
+    transform:translate3d(-50%,-50%,0)
+}
+%loading__icon{
+    display:block;
+    width:24px;
+    height:24px;
+    border-top:2px solid $orange;
+    border-left:2px solid $orange;
+    border-bottom:2px solid $orange;
+    border-right:2px solid transparent;
+    border-radius:50%;
+    animation: loading 1s infinite linear;
+}
+
+// text-overflow
+// --------------------------------------------------
+%text-overflow{
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+
+// ios-checkbox
+// --------------------------------------------------
+%ios-checkbox{
+    input{
+        display:none!important;
+    }
+    input:checked + label:before {
+        transform:translate3d(19px,0,0);
+    }
+    input:checked + label {
+        background: $pink;
+        border:1px solid $pink;
+    }
+    label{
+        background-color:rgba(234, 234, 234, 0.47);
+        border-radius: 40px;
+        display: inline-block;
+        position: relative;
+        transition: all 0.1s ease;
+        width: 40px;
+        height: 21px;
+        border:1px solid rgba(234, 234, 234, 0.06);
+        &:before{
+            content: '';
+            position: absolute;
+            background: #fff;
+            top: 0;
+            left: 0;
+            width: 21px;
+            transform:translate3d(0,0,0);
+            transition: all 0.1s ease;
+            height: 21px;
+            border-radius: 50%;
+        }
+    }
+
+}
+
+
+

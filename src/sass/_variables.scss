@@ -1,0 +1,40 @@
+@charset "utf-8";
+//
+// Variables
+// --------------------------------------------------
+
+
+// font
+//-----------------------------------------------------
+$baseFontSize:          14px !default;
+$baseLineHeight:        1 !default;
+$baseFontFamily:        "Helvetica Neue", Microsoft Yahei, Helvetica, Tahoma, sans-serif !default;
+
+
+// color
+//-----------------------------------------------------
+$backgroundColor:		#f1f1f1 !default;
+$defaultColor:          #989898 !default;
+$importColor:			#4c4c4c !default;
+$disabledColor:         #cccccc !default;
+$flowColor:         	#f8f8f8 !default;
+$sectionColor:          #e8e8e8 !default;
+$pink:                  #dc236b !default;
+$blue:                  #5677fc !default;
+$yellow:                #ffb718 !default;
+$red:                   #D94B41 !default;
+$gold:                  #f1c500 !default;
+$green:                 #73bb46 !default;
+$gray:                  #989898 !default;
+$grayLight:             #f1f1f1 !default;
+$orange:                #ff7e2e !default;
+$orangeLight:           #ff5d3b !default;
+$black:                 #4c4c4c !default;
+$brown:                 #7d4a31 !default;
+
+//z-index
+//-----------------------------------------------------
+$zIndex_loading: 		1000;
+$zIndex_msgTip: 		999;
+$zIndex_modal: 			998;
+
