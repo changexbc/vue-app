@@ -163,7 +163,7 @@
 
 <script>
     import { Promise } from 'es6-promise'
-    import { setCardPrice } from '../vuex/actions'
+    import { setMsgTip, setCardPrice } from '../vuex/actions'
     import { localInfo, getQueryString, rules } from '../utils/utils'
     import { indexApi } from '../api/api'
     import modal from '../components/Modal.vue'
@@ -190,6 +190,7 @@
                 userId: ({ localInfo }) => localInfo.userId
             },
             actions:{
+                setMsgTip,
                 setCardPrice
             }
         },
